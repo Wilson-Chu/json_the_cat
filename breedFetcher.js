@@ -8,7 +8,7 @@ request(`https://api.thecatapi.com/v1/breeds/search?q=${input[2]}`, (error, resp
   try {
     console.log(`Description: ${data[0].description}`);
   } catch (error) {
-    console.error('Error:', error); // Print the error if one occurred
+    console.error('ERROR:', error); // Print the error if one occurred
 
     if (data.length === 0) {
       console.log(`Breed not found: ${input[2]}`);
